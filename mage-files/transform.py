@@ -48,6 +48,7 @@ def transform(df, *args, **kwargs):
     trip_distance_dim = df[['trip_distance']].drop_duplicates().reset_index(drop=True)
     trip_distance_dim['trip_distance_id'] = trip_distance_dim.index
     trip_distance_dim = trip_distance_dim[['trip_distance_id','trip_distance']]
+    
     rate_code_type = {
         1:"Standard rate",
         2:"JFK",
