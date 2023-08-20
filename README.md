@@ -36,12 +36,34 @@ More info about dataset can be found here:
 
 ## Let's begin
 ### Import data 
-Firstly, we need import the data in folder `data` into Google Cloud database. Following the instruction in the `.\setup\google_cloud_db\bucket_db` to do this
+Firstly, we need import the data in folder `data` into Google Cloud database. Following the instruction in the folder `.\setup\google_cloud_db\bucket_db` to do this
 Make sure opening the access key to get the connection to the data
 <img src=".\setup\google_cloud_db\bucket_db\15.png">
 
-After that, you will need to create a virtual machines to operate the database. Following the instruction in the `.\setup\google_cloud_db\vm_instances` to do this. You may need the file `commands.txt` to copy and paster some code lines to import some necessary library
+After that, you will need to create a virtual machines to operate the database. Following the instruction in the `.\setup\google_cloud_db\vm_instances` folder to do this. You may need the file `commands.txt` to copy and paster some code lines to import some necessary library
 
-After finishing the setup in folder `.\setup\google_cloud_db`, you can have the access on the link mage.ai:
+After finishing the setup in the `.\setup\google_cloud_db` folder, you can have the access on the link mage.ai:
 `34.126.188.253:6789/pipeplines`
 Note: This link can change depending on your google cloud account
+
+## Create the pipelines on Mage.ai
+Mage.ai is a tools that help you to automate the process etl task in data engineering
+
+Keep following the instruction in the `.\setup\google_cloud_db\mage_ai` folder, there is three code file in the `.\mage-files` folder
+to help you build the processing data pipeline
+
+## Create the aggrigate table on Big Query
+After you run the pipelines on mage.ai, please check on your project database to see the uploaded tables. We will write a SQL query to aggrigate one table, called `fact_table` in order to build our dashboard
+
+Following the instruction in the `.\setup\big_query` folder for more detailed. The SQL query is in the `analytics_query.sql` file
+
+## Build the dashboard on Looker Studio
+Follow the instructions in the `.\setup\looker_studio` folder to connect to previously saved data.
+
+The purpose of this task is to build a dashboard, to show the updated status of Revenue, Distance traveled, Amount of tips, location of car...
+
+You can customize the dashboard according to your own needs
+<img src="Uber-dashboard.pdf">
+
+That is all of the project. Thanks for watching :D
+
