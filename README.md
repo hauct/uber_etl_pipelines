@@ -34,6 +34,9 @@ More info about dataset can be found here:
 ## Data Model
 <img src="data_model.jpeg">
 
-## Let begin
-### Firstly, we need import the data in folder `data` into Google Cloud database. Follow the instruction in the `.\setup
-\google_cloud_db\bucket_db` to do this
+## Let's begin
+### Import data 
+Firstly, we need import the data in folder `data` into Google Cloud database. Follow the instruction in the `.\setup\google_cloud_db\bucket_db` to do this
+Make sure opening the access key to get the connection to the data
+<img src=".\setup\google_cloud_db\bucket_db\15.png">
+
