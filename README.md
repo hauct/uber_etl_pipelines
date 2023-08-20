@@ -36,7 +36,12 @@ More info about dataset can be found here:
 
 ## Let's begin
 ### Import data 
-Firstly, we need import the data in folder `data` into Google Cloud database. Follow the instruction in the `.\setup\google_cloud_db\bucket_db` to do this
+Firstly, we need import the data in folder `data` into Google Cloud database. Following the instruction in the `.\setup\google_cloud_db\bucket_db` to do this
 Make sure opening the access key to get the connection to the data
 <img src=".\setup\google_cloud_db\bucket_db\15.png">
 
+After that, you will need to create a virtual machines to operate the database. Following the instruction in the `.\setup\google_cloud_db\vm_instances` to do this. You may need the file `commands.txt` to copy and paster some code lines to import some necessary library
+
+After finishing the setup in folder `.\setup\google_cloud_db`, you can have the access on the link mage.ai:
+`34.126.188.253:6789/pipeplines`
+Note: This link can change depending on your google cloud account
