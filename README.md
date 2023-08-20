@@ -63,7 +63,7 @@ Follow the instructions in the `.\setup\looker_studio` folder to connect to prev
 The purpose of this task is to build a dashboard, to show the updated status of Revenue, Distance traveled, Amount of tips, location of car...
 
 You can customize the dashboard according to your own needs
-<img src="Uber-dashboard.pdf">
+<img src="Uber-dashboard.png">
 
 That is all of the project. Thanks for watching :D
 
